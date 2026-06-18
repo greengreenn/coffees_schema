@@ -151,7 +151,7 @@
         </xs:element>
 
         <!-- 10. coffee:beginnerFriendly | Mandatory, non-repeatable -->
-        <!-- a. A Boolean type is used to indicate whether a beverage is suitable for beginners. 
+        <!-- a. A Boolean type is used to indicate whether a beverage is suitable for beginners. A beverage should generally be assigned the value "true" when sweetnessLevel is more than 3.
         This allows users to quickly determine whether a drink is beginner-friendly through a simple true/false value. -->
         <!-- b.I asked the AI ​​"if it would be okay to use a Boolean type for this element", and I received a reply that it is suitable to use. -->
         <!-- Boolean: true | false -->
