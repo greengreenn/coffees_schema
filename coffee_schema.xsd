@@ -68,7 +68,7 @@
         <!-- 5. schema:prepTime | Optional, non-repeatable, -->
         <!-- a. This element is conceptually aligned with schema.org/prepTime, but is declared locally because schema.org does not provide an importable XSD. 
         The schema:prepTime element records the typical preparation time required to make the beverage. 
-        Since preparation time is represented as a numerical value (measured in minutes), the xs:duration type was chosen to support consistent data entry and validation. 
+        Since preparation time is represented using ISO 8601 duration values, the xs:duration type was chosen to support consistent data entry and validation. 
         This is based on the preparation time of an average cafe. I set it as optional for fast-prepared drinks like Americanos, as their preparation time is not that important.-->
         <!-- b. An AI assistant was consulted to review the representation of preparation time. 
         The original design stored values as free-text strings (e.g., "1m 30s"). 
