@@ -9,6 +9,8 @@
   <xs:import namespace="http://purl.org/dc/elements/1.1/" 
              schemaLocation="https://www.dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd"/>
 
+  <!--The schema follows a single-level organizational structure in which all metadata elements are contained directly within the coffeeBeverage root element. 
+           Because the schema focuses on describing one beverage rather than a complex object with multiple independent components, a flat structure was considered sufficient and easier to understand than a deeply hierarchy. -->
 
   <!-- Root Element -->
   <!-- a. This schema was developed to explain coffee drinks commonly served in cafes to unfamiliar customers.  
