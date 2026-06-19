@@ -119,7 +119,8 @@
         <!-- 8. coffee:foamLevel | Optional, non-repeatable -->
         <!-- a. This element was added to distinguish beverages such as flat whites, lattes, and cappuccinos, which differ primarily in milk foam texture and thickness. 
         A controlled vocabulary was used because the possible values are limited and well defined.
-        Only used for drinks that contain milk -->
+        Only used for drinks that contain milk. 
+        However, the rule that foamLevel should only be used when base is milk cannot be automatically enforced at the schema level. Data entry must be managed manually to maintain consistency. -->
         <!-- Controlled vocabulary: light | medium | heavy -->
          <xs:element name="foamLevel" minOccurs="0" maxOccurs="1">
           <xs:annotation>
@@ -152,7 +153,8 @@
 
         <!-- 10. coffee:beginnerFriendly | Mandatory, non-repeatable -->
         <!-- a. A Boolean type is used to indicate whether a beverage is suitable for beginners. A beverage should generally be assigned the value "true" when sweetnessLevel is more than 3.
-        This allows users to quickly determine whether a drink is beginner-friendly through a simple true/false value. -->
+        This allows users to quickly determine whether a drink is beginner-friendly through a simple true/false value.
+        The rule that beginnerFriendly should be true when sweetnessLevel more than 3 cannot be automatically enforced at the schema level. Data entry must be managed manually to maintain consistency.-->
         <!-- b.I asked the AI ​​"if it would be okay to use a Boolean type for this element", and I received a reply that it is suitable to use. -->
         <!-- Boolean: true | false -->
         <xs:element name="beginnerFriendly" type="xs:boolean" minOccurs="1" maxOccurs="1">
