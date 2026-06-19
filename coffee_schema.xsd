@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://coffeeschema.example.org/"
            xmlns:schema="https://schema.org/"
-           xmlns="http://coffeeschema.example.org/"
+           xmlns:coffee="http://coffeeschema.example.org/"
            xmlns:dc="http://purl.org/dc/elements/1.1/"
            elementFormDefault="qualified">
 
@@ -100,7 +100,7 @@
               <!-- a. This element describes the base of the beverage. To keep the schema simple and focused on common coffee drinks, only 4 controlled vocabulary values are provided. 
               (Special cases such as oat-based beverages are not included in the current version of the schema.)
               The value none is used to represent espresso-based drinks without an additional base.-->
-              <!-- Controlled vocabulary: water | milk | ice cream | none -->
+              <!-- Controlled vocabulary: water | milk | ice-cream | none -->
               <xs:element name="base" minOccurs="1" maxOccurs="1">
                 <xs:annotation>
                   <xs:documentation>The primary liquid or structural base of the beverage.</xs:documentation>
@@ -109,7 +109,7 @@
                   <xs:restriction base="xs:string">
                     <xs:enumeration value="water"/>
                     <xs:enumeration value="milk"/>
-                    <xs:enumeration value="ice cream"/>
+                    <xs:enumeration value="ice-cream"/>
                     <xs:enumeration value="none"/>
                   </xs:restriction>
                 </xs:simpleType>
